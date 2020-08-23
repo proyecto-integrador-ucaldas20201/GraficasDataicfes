@@ -41,3 +41,22 @@ function CargarDatosSelect(modulos, id) {
         options[options.length] = new Option(modulos[i].label, modulos[i].value);
     }
 }
+
+function modifyDate() {
+    var boxDate = $('.date');
+    var newYears = [];
+    var newPeriods = [];
+    for (let i = 0; i < boxDate.length; i++) {
+        if (boxDate[i].checked) {
+            var temp = "genericas" + boxDate[i].value.slice(0, 4)
+            var index = newYears.indexOf(temp)
+            if (index == -1) {
+                newYears.push(temp);
+            }
+            newPeriods.push(boxDate[i].value)
+        }
+    }
+    year = newYears;
+    period = newPeriods;
+    cargarDatos();
+}
