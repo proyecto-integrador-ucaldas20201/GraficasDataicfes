@@ -26,3 +26,7 @@ Route::get('/ruta2', function () {
 Route::post('/consultaPosicionGenericas','dataBaseController@consultaGenericaPosicion');
 
 Route::post('/obtenerInstituciones','dataBaseController@obtenerInstituciones');
+
+
+
+
