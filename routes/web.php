@@ -28,3 +28,4 @@ Route::post('/consultaPosicionGenericas','dataBaseController@consultaGenericaPos
 
 Route::post('/obtenerInstituciones','dataBaseController@obtenerInstituciones');
 
+/*Route::get('/obtenerInstituciones2','dataBaseController@obtenerInstituciones');
