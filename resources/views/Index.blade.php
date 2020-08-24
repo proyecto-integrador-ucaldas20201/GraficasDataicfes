@@ -131,16 +131,16 @@
                                 </select>
                              </div>
                              <div class="content col-md-2">
-                                <select class="browser-default custom-select" onchange="SelectUniversidades()" id="universidades">
+                                <!--<select class="browser-default custom-select" onchange="SelectUniversidades()" id="universidades">
                                    <option value="competenciaCiudadana" selected>Cargando...</option>
-                                </select>
+                                </select>-->
                              </div>
-                             <div class="content col-md-2 ">
+                             <div class="content col-md-1">
                                 <select class="browser-default custom-select" onchange="cargarDatos()" id="moduloGenerico">
                                    <option value="competenciaCiudadana" selected>Cargando...</option>
                                 </select>
                              </div>
-                              <div class="custom-control custom-radio col-md-2  ">
+                              <div class="custom-control custom-radio col-md-offset-1 col-md-2  ">
                                  <div>
                                     <label class="custom-control-label" for="barras">  Filtro Año   </label>
                                  </div>
@@ -162,6 +162,7 @@
                                  <input type="radio" class="custom-control-input" id="pastel" name="TipoGrafica">
                                  <label class="custom-control-label" for="pastel">Grafica de pastel</label>
                               </div>
+                              <hr>
                            </div>
                         </div>
                      </div>
@@ -176,6 +177,12 @@
                         </div>
                         <div class="content">
                            <div id="PosicionUniversidades" class="ct-chart"></div>
+                           <div class="content col-md-offset-1 col-md-2">
+                                <select class="browser-default custom-select" onchange="SelectUniversidades()" id="universidades">
+                                   <option value="competenciaCiudadana" selected>Cargando...</option>
+                                </select>
+                             </div>
+                             <hr>
                            <div class="footer">
                               <div class="legend">
                               </div>
