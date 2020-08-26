@@ -70,7 +70,7 @@ class dataBaseController extends Controller
 
     public function consultaGenericaPosicion(Request $request){
         $whereQuery = $this->controladorDeFiltros($request);
-        $query = 'SELECT INST_NOMBRE_INSTITUCION as INSTITUCION, INST_COD_INSTITUCION as CODIGO, AVG('.$request->modulo.') as PROMEDIO FROM MASTERTABLE ' . $whereQuery. ' GROUP BY INST_NOMBRE_INSTITUCION,CODIGO ORDER BY INSTITUCION';
+        $query = 'SELECT INST_NOMBRE_INSTITUCION as INSTITUCION, INST_COD_INSTITUCION as CODIGO, AVG('.$request->modulo.') as PROMEDIO FROM MASTERTABLE '. $whereQuery. ' GROUP BY INST_NOMBRE_INSTITUCION,CODIGO ORDER BY INSTITUCION';
         $response = DB::select($query);
         return response()->json(
             array(
@@ -79,8 +79,6 @@ class dataBaseController extends Controller
                 200
         );
     }
-
-
 
     public function obtenerInstituciones(Request $request){
 
@@ -105,9 +103,5 @@ class dataBaseController extends Controller
             ),
                 200
         );
-    }
-
-    public function store(){
-
     }
 }

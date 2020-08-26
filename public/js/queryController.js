@@ -34,7 +34,6 @@ function obtenerMunicipiosSelect(data) {
     return $.ajax({
         url: "obtenerMunicipio",
         method: "post",
-        
         data: {
             deptartamento: data
         },
