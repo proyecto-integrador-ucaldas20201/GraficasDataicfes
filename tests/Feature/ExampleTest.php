@@ -19,10 +19,5 @@ class ExampleTest extends TestCase
         $response->assertStatus(200);
     }
 
-    public function testprimerTest()
-    {
-        $response = $this->post('/obtenerInstituciones');
-
-        $response->assertStatus(200);
-    }
+    
 }

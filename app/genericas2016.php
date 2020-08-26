@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class genericas2016 extends Model
 {
-	public $table='genericas2016';
+	public $table='mastertable';
 }
 
