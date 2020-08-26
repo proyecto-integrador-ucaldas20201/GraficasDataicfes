@@ -89,9 +89,9 @@ class controladorgenericas2016 extends Controller
 		$periodo=$_GET['periodo'];
 	    $modulo=$_GET['modulo'];
 
-		$genericas = DB::select('SELECT INST_NOMBRE_INSTITUCION, AVG('.$modulo.') PROMEDIO FROM genericas'.$tiempo.' WHERE PERIODO='.$tiempo.''.$periodo.' GROUP BY INST_NOMBRE_INSTITUCION ORDER BY AVG('.$modulo.') DESC limit 0, 10');
+		$genericas = DB::select('SELECT INST_NOMBRE_INSTITUCION, AVG('.$modulo.') PROMEDIO FROM mastertable'.$tiempo.' WHERE PERIODO='.$tiempo.''.$periodo.' GROUP BY INST_NOMBRE_INSTITUCION ORDER BY AVG('.$modulo.') DESC limit 0, 10');
 
-        return view(' ',['genericas2016'=>$genericas]);
+        return view(' ',['mastertable'=>$genericas]);
 	}
 
 }

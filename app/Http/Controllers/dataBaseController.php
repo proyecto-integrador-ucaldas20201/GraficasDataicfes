@@ -80,8 +80,6 @@ class dataBaseController extends Controller
         );
     }
 
-
-
     public function obtenerInstituciones(Request $request){
 
         $instituciones = DB::select('SELECT DISTINCT(INST_NOMBRE_INSTITUCION), INST_COD_INSTITUCION FROM mastertable');
