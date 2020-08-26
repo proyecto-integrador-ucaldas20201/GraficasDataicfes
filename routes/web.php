@@ -27,6 +27,4 @@ Route::post('/consultaPosicionGenericas','dataBaseController@consultaGenericaPos
 
 Route::post('/obtenerInstituciones','dataBaseController@obtenerInstituciones');
 
-
-
-
+Route::post('/obtenerMunicipio','dataBaseController@obtenerMunicipio');
