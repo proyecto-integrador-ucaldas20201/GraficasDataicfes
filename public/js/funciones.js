@@ -5,10 +5,10 @@ var departamento = "null";
 var municipio = "null";
 
 const MODULOS = [
-    { value: 'MOD_COMPETEN_CIUDADA_PUNT', label: 'Competencia Ciudadana' },
+    { value: 'MOD_COMPETEN_CIUDADA_PUNT', label: 'Competencia ciudadana' },
     { value: 'MOD_INGLES_PUNT', label: 'Inglés' },
-    { value: 'MOD_LECTURA_CRITICA_PUNT', label: 'Lectura Critica' },
-    { value: 'MOD_RAZONA_CUANTITAT_PUNT', label: 'Razonamiento Cuantitativo' }
+    { value: 'MOD_LECTURA_CRITICA_PUNT', label: 'Lectura crítica' },
+    { value: 'MOD_RAZONA_CUANTITAT_PUNT', label: 'Razonamiento cuantitativo' }
 ];
 
 $(document).ready(function() {

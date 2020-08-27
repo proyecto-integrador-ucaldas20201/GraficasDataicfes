@@ -52,7 +52,7 @@
                   <li class="active-pro">
                      <a href="upgrade.html">
                         <i class="pe-7s-rocket"></i>
-                        <p>administración</p>
+                        
                      </a>
                   </li>
                </ul>
@@ -63,7 +63,7 @@
                <div class="container-fluid">
                   <div class="navbar-header">
                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
-                     <span class="sr-only">Toggle navigation</span>
+                     
                      <span class="icon-bar"></span>
                      <span class="icon-bar"></span>
                      <span class="icon-bar"></span>
@@ -82,13 +82,11 @@
                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                               <i class="fa fa-globe"></i>
                               <b class="caret hidden-lg hidden-md"></b>
-                              <p class="hidden-lg hidden-md">
-                                 5 Notifications
-                                 <b class="caret"></b>
+                              
                               </p>
                            </a>
                            <ul class="dropdown-menu">
-                              <li><a href="#">Notificación 1</a></li>
+                              
                            </ul>
                         </li>
                         <li>
@@ -101,10 +99,7 @@
                      <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                              <p>
-                                 Menu
-                                 <b class="caret"></b>
-                              </p>
+                              
                            </a>
                            <ul class="dropdown-menu">
                               <li><a href="#">link 1</a></li>
@@ -127,7 +122,7 @@
                            <div class="row">
                             <div class="content col-md-2 ">
                                 <div>
-                                    <label class="custom-control-label selection1" for="barras">  Modulo genérico  </label>
+                                    <label class="custom-control-label selection1" for="barras">  Módulo genérico  </label>
                                 </div>
                                 <select class="browser-default  selection1 custom-select" onchange="cargarDatos()" id="moduloGenerico">
                                    <option value="competenciaCiudadana" selected>Cargando...</option>
@@ -162,7 +157,7 @@
                              </div>
                               <div class="custom-control custom-radio col-md-1  ">
                                  <div>
-                                    <label class="custom-control-label" for="barras">  Filtro Año   </label>
+                                    <label class="custom-control-label" for="barras">  Filtro año   </label>
                                  </div>
                                  <input type="checkbox" class = "date" value="2016" onclick="modifyDate();"> 2016<br>
                                  <input type="checkbox" class = "date" value="2017" onclick="modifyDate();"> 2017<br>
@@ -185,7 +180,7 @@
                   <div class="col-md-12 ">
                      <div class="card">
                         <div class="header">
-                           <h4 class="title" style="font-family: sans-serif;text-align: center;">Modulos Genericos</h4>
+                           <h4 class="title" style="font-family: sans-serif;text-align: center;">Módulos Genericos</h4>
                            <p class="category">..</p>
                         </div>
                         <div class="content">
@@ -194,9 +189,7 @@
                               <div class="legend">
                               </div>
                               <hr>
-                              <div class="stats">
-                                 <i class="fa fa-history"></i> Pie de pagina
-                              </div>
+                              
                            </div>
                         </div>
                      </div>

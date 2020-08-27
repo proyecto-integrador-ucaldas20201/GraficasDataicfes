@@ -70,7 +70,7 @@ class dataBaseController extends Controller
 
     public function consultaGenericaPosicion(Request $request){
         $whereQuery = $this->controladorDeFiltros($request);
-        $query = 'SELECT INST_NOMBRE_INSTITUCION as INSTITUCION, INST_COD_INSTITUCION as CODIGO, AVG('.$request->modulo.') as PROMEDIO FROM MASTERTABLE '. $whereQuery. ' GROUP BY INST_NOMBRE_INSTITUCION,CODIGO ORDER BY PROMEDIO DESC';
+        $query = 'SELECT INST_NOMBRE_INSTITUCION as INSTITUCION, INST_COD_INSTITUCION as CODIGO, AVG('.$request->modulo.') as PROMEDIO FROM MASTERTABLE '. $whereQuery. ' GROUP BY INST_NOMBRE_INSTITUCION,CODIGO ORDER BY PROMEDIO DESC';        
         $response = DB::select($query);
         return response()->json(
             array(
@@ -84,7 +84,6 @@ class dataBaseController extends Controller
 
         $instituciones = DB::select('SELECT DISTINCT(INST_NOMBRE_INSTITUCION), INST_COD_INSTITUCION FROM mastertable ORDER BY INST_NOMBRE_INSTITUCION ASC');
         $departamentos = DB::select('SELECT DISTINCT(ESTU_DEPTO_RESIDE), ESTU_COD_RESIDE_DEPTO FROM mastertable ORDER BY ESTU_DEPTO_RESIDE ASC');
-
         return response()->json(
             array(
                 "instituciones"=> $instituciones,

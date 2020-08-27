@@ -14,15 +14,7 @@ class datosTest extends TestCase
      *
      * @return void
      */
-    public function testconsultaPosicionGenericas()
-    {
-        $this->withoutExceptionHandling();
-        $response = $this->call('POST','/consultaPosicionGenericas');
-        $this->assertEquals(200, $response->getStatusCode());
-        //$response->assertStatus(200);
-        
-        
-    }
+    
     public function testobtenerInstituciones()
     {
         $this->withoutExceptionHandling();
@@ -32,14 +24,26 @@ class datosTest extends TestCase
     
     
     }
+
+    public function testconsultaPosicionGenericas()
+    {
+        $this->withoutExceptionHandling();
+        $response = $this->call('POST','/consultaPosicionGenericas');
+        $this->assertEquals(200, $response->getStatusCode());
+        //$response->assertStatus(200);
+        
+        
+    }
+
     public function testobtenerMunicipio()
     {
         $this->withoutExceptionHandling();
-        $response = $this->call('POST','/obtenerMunicipio');
+        $response = $this->call('POST','/obtenerMunicipio',['ESTU_DEPTO_RESIDE'=>'CALDAS']);
+        
         $this->assertEquals(200, $response->getStatusCode());
-        //$response->assertStatus(200);
+        
     
-    
-    }    
+    } 
+      
     
 }
